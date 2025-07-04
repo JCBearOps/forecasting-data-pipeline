@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: example_model
+    description: "This is an example dbt model"
+    columns:
+      - name: id
+        description: "The primary key"
+        tests:
+          - unique
+          - not_null
